@@ -9,24 +9,35 @@
             background-color: #0f172a;  /* тёмно-синий фон */
             margin: 40px;
             line-height: 1.6;
-            color: #e2e8f0;  /* светлый текст */
+            color: #f1f5f9;  /* светлый текст для лучшей читаемости */
         }
+
         h1, h2 {
             color: #60a5fa;  /* светло-голубой заголовок */
         }
+
         p, a {
-            color: #e2e8f0;  /* светлый текст для абзацев и ссылок */
+            color: #f1f5f9;  /* основной текст и ссылки */
             text-decoration: none;
         }
+
+        p {
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            padding: 10px 0;
+        }
+
         a:hover {
             text-decoration: underline;
         }
+
         .screenshots img {
             max-width: 100%;
             margin-bottom: 20px;
             border: 1px solid #ddd;
             border-radius: 4px;
         }
+
         .download, .github {
             margin-top: 20px;
             display: inline-block;
@@ -36,15 +47,22 @@
             border-radius: 4px;
             text-decoration: none;
             margin-right: 10px;
+            transition: background-color 0.3s;
         }
+
         .download:hover, .github:hover {
             background-color: #16325c;
+        }
+
+        /* Адаптивность для маленьких экранов */
+        @media (max-width: 600px) {
+            p { max-width: 100%; padding: 0; }
         }
     </style>
 </head>
 <body>
 
-<h1>Superstore Analysis - Power BI</h1>
+<h1>Superstore Analysis</h1>
 
 <p>
 Developed an end-to-end sales performance dashboard in Power BI. Analyzed key business metrics including Total Sales, Total Profit, Profit Ratio, Profit per Order, Sales per Customer, Average Discount, Total Quantity Sold, and Total Orders. Designed interactive KPI cards, trend charts, and a geographic map to visualize regional performance and support data-driven decision-making.
