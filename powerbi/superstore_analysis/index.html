@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Superstore Analysis</title>
+    <title>Superstore Analysis - Power BI</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,10 +22,10 @@
         }
 
         p {
-            max-width: 800px;   /* ограничиваем ширину */
-            margin-bottom: 20px; /* отступ снизу */
-            padding: 10px 0;
-            text-align: left;   /* текст слева */
+            max-width: 100%;       /* текст почти на всю ширину */
+            margin-bottom: 20px;
+            padding: 0 10px;       /* отступ слева и справа */
+            text-align: left;      /* текст выровнен по левому краю */
         }
 
         a:hover {
@@ -33,7 +33,7 @@
         }
 
         .screenshots {
-            margin-top: 30px; /* отступ сверху */
+            margin-top: 30px; /* отступ сверху перед скринами */
         }
 
         .screenshots img {
@@ -61,13 +61,13 @@
 
         /* Адаптивность для маленьких экранов */
         @media (max-width: 600px) {
-            p { max-width: 100%; padding: 0; }
+            p { padding: 0 5px; }  /* маленький отступ на телефоне */
         }
     </style>
 </head>
 <body>
 
-<h1>Superstore Analysis</h1>
+<h1>Superstore Analysis - Power BI</h1>
 
 <p>
 Developed an end-to-end sales performance dashboard in Power BI. Analyzed key business metrics including Total Sales, Total Profit, Profit Ratio, Profit per Order, Sales per Customer, Average Discount, Total Quantity Sold, and Total Orders. Designed interactive KPI cards, trend charts, and a geographic map to visualize regional performance and support data-driven decision-making.
@@ -82,7 +82,7 @@ Developed an end-to-end sales performance dashboard in Power BI. Analyzed key bu
 
 <!-- Кнопки для скачивания PBIX и GitHub репозитория -->
 <a href="files/Superstore_analysis.pbix" download class="download">Download PBIX File</a>
-<a href="https://github.com/AsselPrmanova/P.Assel-Northwind-Analysis" target="_blank" class="github">View GitHub Repository</a>
+<a href="https://github.com/AsselPrmanova/powerbi/superstore_analysis" target="_blank" class="github">View GitHub Repository</a>
 
 </body>
 </html>
