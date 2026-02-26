@@ -9,39 +9,54 @@
         a { color: #1f3b6c; text-decoration: none; }
         a:hover { text-decoration: underline; }
         section { margin-bottom: 60px; }
-        .project-category { border:1px solid #ddd; padding:20px; margin-bottom:20px; border-radius:8px; background-color:#fff; }
-        ul { list-style: disc; margin-left: 20px; }
+
+        /* Блоки проектов как карточки */
+        .project-category { 
+            border:1px solid #ddd; 
+            padding:20px; 
+            margin-bottom:20px; 
+            border-radius:12px; 
+            background-color:#fff; 
+            font-family: Arial, sans-serif;
+        }
+        .project-category a { 
+            display:inline-block; 
+            margin-right:10px; 
+            padding:8px 16px; 
+            background-color:#1f3b6c; 
+            color:#fff; 
+            border-radius:6px; 
+            text-decoration:none; 
+            margin-top:5px;
+        }
+        .project-category a:last-child { background-color:#33475b; }
+
+        ul { 
+            list-style: disc; 
+            margin-left: 20px; 
+            columns:2; /* два столбца для навыков */
+            column-gap:40px;
+        }
     </style>
 </head>
 <body>
 
-    <!-- О себе -->
-    <section id="about">
-        <h1>Assel Prmanova</h1>
-        <p>
-            Experienced procurement and contract management expert with 13+ years in mining, oil & gas, 
-            and large-scale EPC projects in Kazakhstan. Skilled in full-cycle procurement, supplier relations, 
-            warehouse and contract administration. Proficient in SAP, 1C, and NAV, with strong focus on cost control, 
-            accuracy, and operational efficiency. Strong execution and ability to work in cross-functional environments.
-        </p>
-
-        <h3>Key Skills</h3>
-        <ul>
-            <li>Strategic Procurement & Purchasing Planning</li>
-            <li>Contract Administration & Negotiation</li>
-            <li>ERP Systems: SAP, 1C, Microsoft NAV</li>
-            <li>Vendor Sourcing & Local Content Development</li>
-            <li>Inventory Management & Warehouse Coordination</li>
-            <li>Document Control & Reporting</li>
-            <li>Tender Preparation & Evaluation</li>
-            <li>Supply Chain & Logistics Support</li>
-            <li>Cost Control & Forecasting</li>
-            <li>Analytical Thinking, Cross-Functional Collaboration</li>
-            <li>Python & SQL Data Analytics</li>
-            <li>Power BI Dashboards & Visualization</li>
-            <li>Time Management & Prioritization</li>
-        </ul>
-    </section>
+<!-- Hero / Титульная секция -->
+<section id="about" style="text-align:center; padding:80px 20px; background-color:#f4f6f8; border-radius:12px;">
+    <h2 style="font-size:1.5em; color:#33475b; margin-bottom:20px;">Assel Prmanova</h2>
+    <h1 style="font-size:1.3em; color:#1f3b6c; margin-bottom:30px;">
+        From Procurement to Data Analytics – Turning Experience into Insights
+    </h1>
+    <p style="max-width:700px; margin:0 auto; font-size:1.1em; line-height:1.6; color:#333;">
+        Experienced procurement and contract management expert with 13+ years in mining, oil & gas, and large-scale EPC projects in Kazakhstan.
+        Skilled in full-cycle procurement PR-PO process, supplier relations, warehouse and contract administration, and final closure of EPC project. 
+    </p>
+    <p style="max-width:700px; margin:20px auto 0; font-size:1.1em; line-height:1.6; color:#333;">
+        With a strong focus on cost control, accuracy, and operational efficiency, I am now combining this expertise with growing skills in data analytics
+        to turn complex business information into actionable insights. I excel in cross-functional environments and enjoy transforming numbers
+        into practical solutions that support strategic decisions.
+    </p>
+</section>
 
     <!-- Мои проекты -->
     <section id="projects">
@@ -51,12 +66,10 @@
         <div class="project-category">
             <h3>Full Analytics Projects</h3>
             <p>
-    End-to-end analytics using SQL, Python, and Power BI. Includes KPI dashboards & sales analysis.
-</p>
-<a href="projects/northwind.html">View Projects</a> | 
-<a href="https://github.com/AsselPrmanova/P.Assel-Northwind-Analysis" target="_blank">
-  GitHub Repository
-</a>
+                End-to-end analytics using SQL, Python, and Power BI. Includes KPI dashboards & sales analysis.
+            </p>
+            <a href="projects/northwind.html">View Projects</a>
+            <a href="https://github.com/AsselPrmanova/P.Assel-Northwind-Analysis" target="_blank">GitHub Repository</a>
         </div>
 
         <!-- Категория 2: Power BI Dashboards -->
@@ -65,7 +78,7 @@
             <p>
                 Interactive dashboards for business performance tracking, KPI visualization, and operational insights.
             </p>
-           <a href="powerbi/superstore_analysis/index.html">View Superstore Project</a>
+            <a href="powerbi/superstore_analysis/index.html">View Superstore Project</a>
         </div>
 
         <!-- Категория 3: Excel Templates & Analyses -->
@@ -77,6 +90,29 @@
             <a href="projects/excel.html">View Projects</a>
         </div>
 
+    </section>
+
+    <!-- Key Skills -->
+    <section id="skills">
+        <h3>Key Skills</h3>
+        <ul>
+           <li> Power BI Dashboards & Visualization</li>
+            <li>SQL & Database Analytics (PostgreSQL, MySQL)</li>
+            <li>Python & (pandas, numpy, matplotlib, seaborn, scikit-learn)</li>
+            <li>Strategic Procurement & Purchasing Planning</li>
+            <li>Contract Administration & Negotiation</li>
+            <li>ERP Systems: SAP, 1C, Microsoft NAV</li>
+            <li>Vendor Sourcing & Local Content Development</li>
+            <li>Inventory Management & Warehouse Coordination</li>
+            <li>Document Control & Reporting</li>
+            <li>Tender Preparation & Evaluation</li>
+            <li>Supply Chain & Logistics Support</li>
+            <li>Cost Control & Forecasting</li>
+            <li>Analytical Thinking, Cross-Functional Collaboration</li>
+           
+            
+            <li>Time Management & Prioritization</li>
+        </ul>
     </section>
 
 </body>
