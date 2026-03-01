@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>San Francisco Bike Share</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;  /* светлый фон, чтобы слайды не “выстреливали” */
+            margin: 40px;
+            line-height: 1.6;
+            color: #0f172a;  /* тёмный текст для читаемости */
+        }
+
+        h1, h2 {
+            color: #2563eb;  /* синий заголовок */
+        }
+
+        p, a {
+            color: #0f172a;  /* основной текст и ссылки */
+            text-decoration: none;
+        }
+
+        p {
+            max-width: 100%;
+            margin-bottom: 20px;
+            padding: 0 10px;
+            text-align: left;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .screenshots {
+            margin-top: 30px;
+            background-color: #ffffff; /* светлый фон для слайдов */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .screenshots img {
+            max-width: 100%;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .download, .github {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #2563eb;
+            color: #fff;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-right: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .download:hover, .github:hover {
+            background-color: #1d4ed8;
+        }
+
+        @media (max-width: 600px) {
+            p { padding: 0 5px; }
+            .screenshots { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<h1>San Francisco Bike Share</h1>
+
+<p>
+This project analyzes the <strong>San Francisco Bike Share</strong> dataset to uncover trends and patterns in bike usage. 
+Key metrics include total trips and trends over time (yearly and monthly), trips by location (total and average daily trips by region), 
+daytime activity (routes between locations, hourly and daily trip activity), user demographics such as gender ratio and subscriber activity, 
+and a visual map highlighting the most popular stations in each region. 
+These analyses provide insights into commuter behavior, peak usage times, and station popularity, supporting better planning and operational decisions.
+</p>
+
+<div class="screenshots">
+    <h2>Dashboard Preview</h2>
+    <img src="screenshots/bike_share_1_cover.png" alt="Cover page">
+    <img src="screenshots/bike_share_2_trend_trip.png" alt="Trend_trips">
+    <img src="screenshots/bike_share_3_trend_region.png" alt="Trend Region">
+    <img src="screenshots/bike_share_4_daytime_activity.png" alt="Daytime Activity">
+    <img src="screenshots/bike_share_5_subscriber_info.png" alt="Subscribers">
+  <img src="screenshots/bike_share_6_map.png" alt="Map">
+</div>
+
+<!-- Кнопка для скачивания PBIX с Google Drive -->
+<a href="https://drive.google.com/your-file-link" target="_blank" class="download">Download PBIX File</a>
+
+</body>
+</html>
