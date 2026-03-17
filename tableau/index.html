@@ -2,76 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Superstore Analysis - Tableau </title>
+    <title>Superstore Analysis - Tableau</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #0f172a;  /* тёмно-синий фон */
+            background-color: #F8FAFC;
             margin: 40px;
             line-height: 1.6;
-            color: #f1f5f9;  /* светлый текст для лучшей читаемости */
+            color: #1F2937;
         }
 
         h1, h2 {
-            color: #60a5fa;  /* светло-голубой заголовок */
-        }
-
-        p, a {
-            color: #f1f5f9;  /* основной текст и ссылки */
-            text-decoration: none;
+            color: #2563EB;
         }
 
         p {
-            max-width: 100%;       /* текст почти на всю ширину */
-            margin-bottom: 20px;
-            padding: 0 10px;       /* отступ слева и справа */
-            text-align: left;      /* текст выровнен по левому краю */
+            max-width: 900px;
         }
 
-        a:hover {
-            text-decoration: underline;
+        ul {
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            max-width: 900px;
+        }
+
+        li {
+            margin-bottom: 10px;
         }
 
         .screenshots {
-            margin-top: 30px; /* отступ сверху перед скринами */
+            margin-top: 30px;
         }
 
         .screenshots img {
             max-width: 100%;
             margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            border-radius: 8px;
         }
 
-        .download, .github {
+        .button {
             margin-top: 20px;
             display: inline-block;
             padding: 10px 15px;
-            background-color: #1f3b6c;
+            background-color: #2563EB;
             color: #fff;
-            border-radius: 4px;
+            border-radius: 6px;
             text-decoration: none;
             margin-right: 10px;
-            transition: background-color 0.3s;
         }
 
-        .download:hover, .github:hover {
-            background-color: #16325c;
+        .button:hover {
+            background-color: #1E40AF;
         }
 
-        /* Адаптивность для маленьких экранов */
-        @media (max-width: 600px) {
-            p { padding: 0 5px; }  /* маленький отступ на телефоне */
+        iframe {
+            margin-top: 30px;
+            border-radius: 10px;
         }
     </style>
 </head>
+
 <body>
 
 <h1>Superstore Analysis - Tableau</h1>
 
 <p>
-Developed an end-to-end sales performance dashboard in Power BI. Analyzed key business metrics including Total Sales, Total Profit, Profit Ratio, Profit per Order, Sales per Customer, Average Discount, Total Quantity Sold, and Total Orders. Designed interactive KPI cards, trend charts, and a geographic map to visualize regional performance and support data-driven decision-making.
+This dashboard provides an interactive overview of sales performance for a retail dataset.
 </p>
+
+<h2>Project Overview</h2>
+
+<ul>
+    <li><strong>KPI Cards:</strong> Total Sales, Total Profit, Number of Orders, Number of Customers, Number of Returns</li>
+    <li><strong>Dynamic Parameter:</strong> Switch between Sales, Profit, and Orders to update all visualizations</li>
+    <li><strong>Visualizations:</strong> Map by State, Segment Analysis, Time Trends, Top 5 Sub-categories, Returns by Managers</li>
+    <li><strong>Filters:</strong> Date, Ship Mode, Product</li>
+    <li><strong>Export:</strong> Ability to download dashboard as PDF</li>
+</ul>
 
 <div class="screenshots">
     <h2>Dashboard Preview</h2>
@@ -80,16 +90,21 @@ Developed an end-to-end sales performance dashboard in Power BI. Analyzed key bu
     <img src="Superstore_analysis_sales.png" alt="Sales Analysis">
 </div>
 
+<!-- Кнопка Tableau -->
+<a href="https://public.tableau.com/views/MiniProject-SuperstoreAnalysis/SuperstoreAnalysis?:language=en-US&:display_count=n&:origin=viz_share_link"
+   target="_blank"
+   class="button">
+   View Dashboard on Tableau Public
+</a>
 
-<!-- Кнопка для открытия интерактивного дашборда Tableau Public -->
+<!-- Интерактивный дашборд -->
 <h2>Interactive Dashboard</h2>
-<iframe 
-    src="https://public.tableau.com/views/MiniProject-SuperstoreAnalysis/SuperstoreAnalysis?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
-    width="100%" 
-    height="600" 
-    frameborder="0">
-</iframe>
 
+<iframe 
+    src="https://public.tableau.com/views/MiniProject-SuperstoreAnalysis/SuperstoreAnalysis?:language=en-US&:display_count=n&:origin=viz_share_link"
+    width="100%" 
+    height="600">
+</iframe>
 
 </body>
 </html>
