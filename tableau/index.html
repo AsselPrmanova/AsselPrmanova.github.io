@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Superstore Analysis - Tableau </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;  /* тёмно-синий фон */
+            margin: 40px;
+            line-height: 1.6;
+            color: #f1f5f9;  /* светлый текст для лучшей читаемости */
+        }
+
+        h1, h2 {
+            color: #60a5fa;  /* светло-голубой заголовок */
+        }
+
+        p, a {
+            color: #f1f5f9;  /* основной текст и ссылки */
+            text-decoration: none;
+        }
+
+        p {
+            max-width: 100%;       /* текст почти на всю ширину */
+            margin-bottom: 20px;
+            padding: 0 10px;       /* отступ слева и справа */
+            text-align: left;      /* текст выровнен по левому краю */
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .screenshots {
+            margin-top: 30px; /* отступ сверху перед скринами */
+        }
+
+        .screenshots img {
+            max-width: 100%;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .download, .github {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #1f3b6c;
+            color: #fff;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-right: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .download:hover, .github:hover {
+            background-color: #16325c;
+        }
+
+        /* Адаптивность для маленьких экранов */
+        @media (max-width: 600px) {
+            p { padding: 0 5px; }  /* маленький отступ на телефоне */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Superstore Analysis - Tableau</h1>
+
+<p>
+Developed an end-to-end sales performance dashboard in Power BI. Analyzed key business metrics including Total Sales, Total Profit, Profit Ratio, Profit per Order, Sales per Customer, Average Discount, Total Quantity Sold, and Total Orders. Designed interactive KPI cards, trend charts, and a geographic map to visualize regional performance and support data-driven decision-making.
+</p>
+
+<div class="screenshots">
+    <h2>Dashboard Preview</h2>
+    <img src="Superstore_analysis_orders.png" alt="Orders Analysis">
+    <img src="Superstore_analysis_profit.png" alt="Profit Analysis">
+    <img src="Superstore_analysis_sales.png" alt="Sales Analysis">
+</div>
+
+
+<!-- Кнопка для открытия интерактивного дашборда Tableau Public -->
+<h2>Interactive Dashboard</h2>
+<iframe 
+    src="https://public.tableau.com/views/MiniProject-SuperstoreAnalysis/SuperstoreAnalysis?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
+    width="100%" 
+    height="600" 
+    frameborder="0">
+</iframe>
+
+
+</body>
+</html>
