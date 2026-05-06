@@ -33,14 +33,14 @@
 
         .project-category a.project-btn { 
             display:inline-block; 
-            margin-right:10px;
+            margin-right:10px; 
             padding:8px 16px; 
             background-color:#1f3b6c;  
             color:#fff; 
             border-radius:6px; 
             text-decoration:none; 
             margin-top:5px;
-            transition: 0.3s;
+            transition: background-color 0.3s;
         }
 
         .project-category a.project-btn:hover {
@@ -49,13 +49,18 @@
 
         .project-category a.github-btn {
             display:inline-block;
+            margin-right:10px;
             padding:8px 16px;
             background-color:#33475b;
             color:#fff;
             border-radius:6px;
             text-decoration:none;
             margin-top:5px;
-            transition: 0.3s;
+            transition: background-color 0.3s;
+        }
+
+        .project-category a.github-btn:hover {
+            background-color:#2a3b4e;
         }
 
         ul { 
@@ -71,6 +76,30 @@
             border-radius:12px;
             margin-bottom:30px;
         }
+
+        .hero h2 {
+            font-size:1.5em; 
+            color:#33475b; 
+            margin-bottom:20px;
+        }
+
+        .hero h1 {
+            font-size:1.3em; 
+            color:#1f3b6c; 
+            margin-bottom:30px;
+        }
+
+        .hero p {
+            font-size:1.1em; 
+            line-height:1.6; 
+            color:#333; 
+            margin-bottom:20px;
+        }
+
+        @media (max-width: 600px) {
+            section { padding:20px 10px; }
+            ul { columns:1; }
+        }
     </style>
 </head>
 
@@ -79,10 +108,17 @@
 <!-- HERO -->
 <section class="hero">
     <h2>Assel Prmanova</h2>
-    <h1>From Procurement to Data Analytics</h1>
+    <h1>From Procurement to Data Analytics – Turning Experience into Insights</h1>
 
     <p>
-        Experienced procurement specialist transitioning into data analytics.
+        Experienced procurement and contract management expert with 13+ years in mining, oil & gas, and large-scale EPC projects in Kazakhstan.
+        Skilled in full-cycle procurement PR-PO process, supplier relations, warehouse and contract administration, and final closure of EPC project. 
+    </p>
+
+    <p>
+        With a strong focus on cost control, accuracy, and operational efficiency, I am now combining this expertise with growing skills in data analytics
+        to turn complex business information into actionable insights. I excel in cross-functional environments and enjoy transforming numbers
+        into practical solutions that support strategic decisions.
     </p>
 </section>
 
@@ -93,13 +129,17 @@
     <!-- FULL ANALYTICS -->
     <div class="project-category">
         <h3>Full Analytics Projects</h3>
-        <p>End-to-end analytics using SQL, Python, and Power BI.</p>
+        <p>
+            End-to-end analytics using SQL, Python, and Power BI. Includes KPI dashboards & sales analysis.
+        </p>
 
         <a href="P.Assel-Northwind-Analysis/index.html" class="project-btn">
             View Northwind Project
         </a>
 
-        <a href="https://github.com/AsselPrmanova/P.Assel-Northwind-Analysis" class="github-btn">
+        <a href="https://github.com/AsselPrmanova/P.Assel-Northwind-Analysis" 
+           target="_blank" 
+           class="github-btn">
             GitHub Repository
         </a>
     </div>
@@ -108,36 +148,46 @@
     <div class="project-category">
         <h3>Power BI Dashboards</h3>
 
+        <p>
+            Interactive dashboards for business performance tracking, KPI visualization, and operational insights.
+        </p>
+
         <a href="powerbi/superstore_analysis/index.html" class="project-btn">
-            Superstore Project
+            View Superstore Project
         </a>
 
         <a href="powerbi/san_francisco_bike_share/index.html" class="project-btn">
-            Bike Share Project
+            View San Francisco Bike Share Project
         </a>
 
         <a href="powerbi/e-commerce-performance-analysis/index.html" class="project-btn">
-            E-commerce Analysis
+            View E-commerce Performance Analysis
         </a>
     </div>
 
-    <!-- SQL (ИСПРАВЛЕНО И ОТДЕЛЕНО) -->
+    <!-- SQL (ИСПРАВЛЕНО!) -->
     <div class="project-category">
         <h3>SQL Projects</h3>
+
         <p>
-            Customer transaction analysis using SQL: KPIs, grouping and insights.
+            Customer transaction analysis using SQL. Includes KPIs, grouping logic, and business insights.
         </p>
 
         <a href="sql/index.html" class="project-btn">
             View Customer Transaction Analysis
         </a>
 
-
+        </a>
     </div>
 
     <!-- TABLEAU -->
     <div class="project-category">
         <h3>Tableau Dashboards</h3>
+
+        <p>
+            A collection of interactive dashboards created in Tableau, focusing on data exploration,
+            visualization, and business insights.
+        </p>
 
         <a href="tableau/index.html" class="project-btn">
             View Tableau Project
@@ -148,8 +198,12 @@
     <div class="project-category">
         <h3>Excel Templates & Analyses</h3>
 
+        <p>
+            Structured Excel models for reporting, forecasting, and operational analytics.
+        </p>
+
         <a href="projects/excel.html" class="project-btn">
-            View Excel Projects
+            View Projects
         </a>
     </div>
 
@@ -160,11 +214,20 @@
     <h3>Key Skills</h3>
 
     <ul>
-        <li>Power BI</li>
-        <li>SQL</li>
-        <li>Python</li>
-        <li>Procurement</li>
-        <li>Excel</li>
+        <li>Power BI Dashboards & Visualization</li>
+        <li>SQL & Database Analytics (PostgreSQL, MySQL)</li>
+        <li>Python (pandas, numpy, matplotlib, seaborn, scikit-learn)</li>
+        <li>Strategic Procurement & Purchasing Planning</li>
+        <li>Contract Administration & Negotiation</li>
+        <li>ERP Systems: SAP, 1C, Microsoft NAV</li>
+        <li>Vendor Sourcing & Local Content Development</li>
+        <li>Inventory Management & Warehouse Coordination</li>
+        <li>Document Control & Reporting</li>
+        <li>Tender Preparation & Evaluation</li>
+        <li>Supply Chain & Logistics Support</li>
+        <li>Cost Control & Forecasting</li>
+        <li>Analytical Thinking, Cross-Functional Collaboration</li>
+        <li>Time Management & Prioritization</li>
     </ul>
 </section>
 
