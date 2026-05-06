@@ -1,197 +1,107 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Assel Prmanova | Portfolio</title>
-    <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            background-color: #f4f6f8; 
-            margin: 0; 
-            line-height: 1.6; 
-            color: #333; 
-        }
-        h1, h2, h3 { color: #1f3b6c; }
-        a { color: #1f3b6c; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-
-        /* Общие секции */
-        section { 
-            margin-bottom: 30px;  /* уменьшенный отступ между секциями */
-            padding: 40px 20px; 
-        }
-
-        /* Блоки проектов как карточки */
-        .project-category { 
-            border:1px solid #ddd; 
-            padding:20px; 
-            margin-bottom:20px; 
-            border-radius:12px; 
-            background-color:#fff; 
-        }
-
-        /* Кнопки для проектов – одинаковый синий цвет */
-        .project-category a.project-btn { 
-            display:inline-block; 
-            margin-right:10px; 
-            padding:8px 16px; 
-            background-color:#1f3b6c;  
-            color:#fff; 
-            border-radius:6px; 
-            text-decoration:none; 
-            margin-top:5px;
-            transition: background-color 0.3s;
-        }
-        .project-category a.project-btn:hover {
-            background-color:#16325c;
-        }
-
-        /* Кнопки для GitHub – отдельный цвет */
-        .project-category a.github-btn {
-            display:inline-block;
-            margin-right:10px;
-            padding:8px 16px;
-            background-color:#33475b;
-            color:#fff;
-            border-radius:6px;
-            text-decoration:none;
-            margin-top:5px;
-            transition: background-color 0.3s;
-        }
-        .project-category a.github-btn:hover {
-            background-color:#2a3b4e;
-        }
-
-        ul { 
-            list-style: disc; 
-            margin-left: 20px; 
-            columns:2; 
-            column-gap:40px;
-        }
-
-        /* Hero Section Full Width */
-        .hero {
-            background-color:#f4f6f8; 
-            padding:80px 20px; 
-            border-radius:12px;
-            margin-bottom:30px;  /* сокращенный отступ к следующей секции */
-        }
-        .hero h2 {
-            font-size:1.5em; 
-            color:#33475b; 
-            margin-bottom:20px;
-        }
-        .hero h1 {
-            font-size:1.3em; 
-            color:#1f3b6c; 
-            margin-bottom:30px;
-        }
-        .hero p {
-            font-size:1.1em; 
-            line-height:1.6; 
-            color:#333; 
-            margin-bottom:20px;
-        }
-
-        @media (max-width: 600px) {
-            section { padding:20px 10px; }
-            ul { columns:1; }
-        }
-    </style>
+<meta charset="UTF-8">
+<title>SQL Project | Customer Transaction Analysis</title>
+<style>
+body {font-family: Arial; margin:0; background:#f5f7fa; color:#333;}
+header {background:#1f2a44; color:white; padding:30px; text-align:center;}
+.container {max-width:1000px; margin:auto; padding:20px;}
+.card {background:white; padding:20px; margin:15px 0; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.08);}
+pre {background:#f0f0f0; padding:15px; border-radius:8px; overflow-x:auto;}
+.tag {display:inline-block; background:#dbeafe; color:#1e3a8a; padding:5px 10px; border-radius:20px; font-size:12px; margin:3px;}
+a.button {
+    display:inline-block;
+    padding:10px 15px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    margin-top:10px;
+}
+footer {text-align:center; padding:20px; font-size:12px; color:#777;}
+</style>
 </head>
 <body>
 
-<!-- Hero / Титульная секция -->
-<section class="hero">
-    <h2>Assel Prmanova</h2>
-    <h1>From Procurement to Data Analytics – Turning Experience into Insights</h1>
-    <p>
-        Experienced procurement and contract management expert with 13+ years in mining, oil & gas, and large-scale EPC projects in Kazakhstan.
-        Skilled in full-cycle procurement PR-PO process, supplier relations, warehouse and contract administration, and final closure of EPC project. 
-    </p>
-    <p>
-        With a strong focus on cost control, accuracy, and operational efficiency, I am now combining this expertise with growing skills in data analytics
-        to turn complex business information into actionable insights. I excel in cross-functional environments and enjoy transforming numbers
-        into practical solutions that support strategic decisions.
-    </p>
-</section>
+<header>
+<h1>SQL Project: Customer Transaction Analysis</h1>
+<p>Behavioral analysis of customers using SQL</p>
+</header>
 
-<!-- Мои проекты -->
-<section id="projects">
-    <h2>My Works</h2>
+<div class="container">
 
-    <!-- Full Analytics Projects -->
-   <div class="project-category">
-    <h3>Full Analytics Projects</h3>
-    <p>
-        End-to-end analytics using SQL, Python, and Power BI. Includes KPI dashboards & sales analysis.
-    </p>
+<div class="card">
+<h2>📌 Project Overview</h2>
+<p>
+This project analyzes customer transaction data to understand user behavior,
+activity patterns, segmentation, and spending structure.
+</p>
 
-    <a href="P.Assel-Northwind-Analysis/index.html" class="project-btn">
-        View Northwind Project
-    </a>
+<a class="button" href="customer_transaction_analysis.sql" download>
+⬇ Download SQL Script
+</a>
 
-    <a href="https://github.com/AsselPrmanova/P.Assel-Northwind-Analysis" 
-       target="_blank" 
-       class="github-btn">
-        GitHub Repository
-    </a>
 </div>
 
-    <!-- Power BI Dashboards -->
-    <div class="project-category">
-        <h3>Power BI Dashboards</h3>
-        <p>
-            Interactive dashboards for business performance tracking, KPI visualization, and operational insights.
-        </p>
-        <a href="powerbi/superstore_analysis/index.html" class="project-btn">View Superstore Project</a>
-        <a href="powerbi/san_francisco_bike_share/index.html" class="project-btn">View San Francisco Bike Share Project</a>
-        <a href="powerbi/e-commerce-performance-analysis/index.html" class="project-btn"> View E-commerce Performance Analysis
-</a>
-    
-    </div> 
-    
-     <div class="project-category">
-    <h3>Tableau Dashboards</h3>
-    <p>
-        A collection of interactive dashboards created in Tableau, focusing on data exploration,
-        visualization, and business insights.
-    </p>
-    <a href="tableau/index.html" class="project-btn">View Superstore Project</a>
-    </div> 
-    <!-- Excel Templates & Analyses -->
-    <div class="project-category">
-        <h3>Excel Templates & Analyses</h3>
-        <p>
-            Structured Excel models for reporting, forecasting, and operational analytics.
-        </p>
-        <a href="projects/excel.html" class="project-btn">View Projects</a>
-    </div>
+<div class="card">
+<h2>🛠 Tools</h2>
+<span class="tag">SQL</span>
+<span class="tag">MySQL</span>
+<span class="tag">Window Functions</span>
+<span class="tag">Aggregation</span>
+<span class="tag">Temporary Tables</span>
+</div>
 
-</section>
+<div class="card">
+<h2>📊 Key Analysis</h2>
+<p>Customer activity analysis using SQL queries.</p>
+<pre>
+SELECT id_client,
+COUNT(DISTINCT DATE_FORMAT(date_new, '%Y-%m')) AS active_months
+FROM transactions
+GROUP BY id_client;
+</pre>
+</div>
 
-<!-- Key Skills -->
-<section id="skills">
-    <h3>Key Skills</h3>
-    <ul>
-        <li>Power BI Dashboards & Visualization</li>
-        <li>SQL & Database Analytics (PostgreSQL, MySQL)</li>
-        <li>Python & (pandas, numpy, matplotlib, seaborn, scikit-learn)</li>
-        <li>Strategic Procurement & Purchasing Planning</li>
-        <li>Contract Administration & Negotiation</li>
-        <li>ERP Systems: SAP, 1C, Microsoft NAV</li>
-        <li>Vendor Sourcing & Local Content Development</li>
-        <li>Inventory Management & Warehouse Coordination</li>
-        <li>Document Control & Reporting</li>
-        <li>Tender Preparation & Evaluation</li>
-        <li>Supply Chain & Logistics Support</li>
-        <li>Cost Control & Forecasting</li>
-        <li>Analytical Thinking, Cross-Functional Collaboration</li>
-        <li>Time Management & Prioritization</li>
-    </ul>
-</section>
+<div class="card">
+<h2>💰 Revenue Insights</h2>
+<p>Monthly spending distribution by gender.</p>
+<pre>
+SELECT DATE_FORMAT(t.date_new, '%Y-%m') AS month,
+c.gender,
+SUM(t.sum_payment) AS total_spend
+FROM transactions t
+JOIN customers c ON t.id_client = c.id_client
+GROUP BY month, c.gender;
+</pre>
+</div>
+
+<div class="card">
+<h2>📈 KPI Summary</h2>
+<ul>
+<li><b>Total Customers Analyzed:</b> 10,000+</li>
+<li><b>Average Active Months per Customer:</b> calculated via SQL grouping</li>
+<li><b>Customer Segments:</b> age, gender, activity level</li>
+<li><b>Revenue Breakdown:</b> monthly and gender-based distribution</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>📊 Key Insights</h2>
+<ul>
+<li>Identified highly active customers (12-month activity)</li>
+<li>Segmented users by age and gender</li>
+<li>Observed seasonal transaction patterns</li>
+<li>Analyzed revenue concentration across segments</li>
+</ul>
+</div>
+
+</div>
+
+<footer>
+© 2026 SQL Portfolio Project
+</footer>
 
 </body>
 </html>
->>>>>>> afdaed144d9a3bc7b28ac6727695b8c4db165e69
